@@ -3,13 +3,18 @@
 
 # FizzBuzzメソッド
 def FizzBuzz(num)
-  modori = num
+
   if num % 3 == 0 && num % 5 == 0
+    # ３と５の倍数
     modori = "FizzBuzz"
   elsif num % 3 == 0
+    # ３の倍数
     modori = "Fizz"
   elsif num % 5 == 0
-    modori = "Buzz"    
+    # ５の倍数
+    modori = "Buzz"
+  else
+    modori = num
   end
 
   return modori
